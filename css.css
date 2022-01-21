@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Source+Sans+Pro:wght@700&display=swap');
+
+
+.DOM{
+    filter: grayscale(1);
+    transition: 0.8s;
+}
+
+.DOM:hover{
+    filter: grayscale(0);
+}
+
+
+.box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 400px;
+    background: #02022f;
+    border-radius: 20px;
+    overflow: hidden;
+    
+}
+
+.box span{
+    position:relative ;
+    color: #fff;
+    font-size: 7.5em;
+    z-index: 10;
+}
+
+
+.box::before{
+    content: '';
+    position: absolute;
+    z-index: 0;
+    width: 500px;
+    height: 70px;
+    background:linear-gradient(#00ccff, #d400d4) ;
+    animation: animate 4s linear infinite;
+}
+
+
+.box::after{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background:#0c1538 ;
+    
+}
+
+@keyframes animate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

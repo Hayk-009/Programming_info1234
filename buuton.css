@@ -1,0 +1,63 @@
+.body{
+    background: #00002e ;
+    width: 200px;
+    height: 140px;
+    border-radius: 15px;
+
+}
+
+.container2 button{
+    position: relative;
+    right: 17px;
+    background: transparent;
+    border: transparent;
+    color: white;
+    font-size: 35px;
+    z-index: 11;
+}
+
+.container2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 200px;
+    height: 140px;
+    border-radius: 15px;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.container2 button:hover{
+    cursor: pointer;
+}
+
+.container2::before{
+    content: '';
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 75px;
+    height: 500px;
+    background: linear-gradient(#ff1a8c,  #d600d6,#6200ad
+    );
+    animation: animate 2s linear infinite;
+
+}
+
+
+
+.container2::after{
+    content: '';
+    position: absolute;
+    inset: 4px;
+    background: #00002e ;
+}

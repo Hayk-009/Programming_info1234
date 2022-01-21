@@ -1,0 +1,51 @@
+.stadion{
+    width: 700px;
+    height: 700px;
+    border: 3px solid black;
+    overflow: hidden;
+    background-color: white;
+}
+
+.stadion .ball{
+    position: relative;
+    width: 35%;
+    height: 14%;
+    left: 0%;
+    top: 79.8%;
+    animation: animate2 3s linear infinite alternate;
+
+}
+
+.child-stadion{
+    position: relative;
+    width: 100%;
+    height: 40%;
+    color: black;
+    top: 50%;
+    z-index: 10;
+}
+
+@keyframes animate2{
+    100%{
+        left: 100%;
+        transition: 0.5s;
+        right: 200%;
+    }
+}
+
+.strelka{
+    position: relative;
+    left: 70px;
+    height: 150px;
+    animation: round 0.4s linear infinite alternate;
+    transform: rotate(-90deg);
+}
+
+@keyframes round{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(50deg);
+    }
+}

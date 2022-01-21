@@ -1,0 +1,52 @@
+.box .img1{
+    position:relative;
+    animation-name: animate;
+    animation-delay: 0.4s;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    opacity: 0.3s;
+    
+}
+
+@keyframes animate{
+    0%{
+        left: 0px;
+        opacity: 0;
+    }
+    100%{
+        opacity: 100;
+        left:300px ;
+        
+    }
+}
+
+.box .img2{
+    position:relative;
+    animation-name: animate2;
+    animation-delay: 0.4s;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    opacity: 0.3s;
+    
+}
+
+.box .span{
+    position: relative;
+    visibility: visible;
+}
+
+@keyframes animate2{
+    0%{
+        right: 0px;
+        
+    }
+    100%{
+        
+        right:300px ;
+        
+    }
+}

@@ -1,0 +1,167 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header img{
+    position: fixed;
+    z-index: 10;
+}
+
+main{
+    position: relative;
+    left: 595px;
+    background-color: aliceblue;
+    width: 62.4%;
+    height: 120%;
+}
+.main{
+    margin: 25px;
+}
+
+.main2{
+    margin: 50px;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.home{
+    color: black;
+    font-size: 30px;
+}
+
+
+
+.home:hover::before{
+    content: "Home";
+    bottom:3px;
+    margin-right: 2px;
+    color: white;
+    position: relative;
+    animation: home 0.5s linear 1 ;
+
+
+}
+
+@keyframes home{
+    0%{
+        
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-15px);
+    }
+}
+
+
+.service{
+    color: black;
+    font-size: 30px;
+}
+
+
+.service:hover::before{
+    content: "Services";
+    bottom:3px;
+    margin-right: 2px;
+    color: white;
+    position: relative;
+    animation: service 0.5s linear 1 ;
+
+
+}
+
+@keyframes service{
+    0%{
+        
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-15px);
+    }
+}
+
+
+
+.about{
+    color: black;
+    font-size: 30px;
+}
+
+
+.about:hover::before{
+    content: "About";
+    bottom:3px;
+    margin-right: 2px;
+    color: white;
+    position: relative;
+    animation: about 0.5s linear 1 ;
+
+
+}
+
+@keyframes about{
+    0%{
+        
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-15px);
+    }
+}
+
+
+.contacts{
+    color: black;
+    font-size: 30px;
+}
+
+.contacts:hover::before{
+    content: "Contacts";
+    bottom:3px;
+    margin-right: 2px;
+    color: white;
+    position: relative;
+    animation: contacts 0.5s linear 1 ;
+
+
+}
+
+@keyframes contacts{
+    0%{
+        
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-15px);
+    }
+}
+
+.logIn{
+    color: black;
+    font-size: 30px;
+}
+
+.logIn:hover::before{
+    content: "Log In";
+    bottom:3px;
+    margin-right: 2px;
+    color: white;
+    position: relative;
+    animation: Log 0.5s linear 1 ;
+
+
+}
+
+@keyframes Log{
+    0%{
+        
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-15px);
+    }
+}
